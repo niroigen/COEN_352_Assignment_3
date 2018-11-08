@@ -8,6 +8,9 @@ public class Q_3_1_3 {
 		list.put('A', 2);
 		list.put('C', 3);
 		list.put('D', 9);
+		
+		list.search(1);
+		list.delete(1);
 		list.printValues();
 	}
 }

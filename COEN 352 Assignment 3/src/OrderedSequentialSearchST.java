@@ -38,6 +38,30 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> {
 		 // Search miss: add new node.
 	}
 	
+	public void search(Value val) {
+		for (Node x = first; x != null; x = x.next) {
+			if (val.equals(x.val)) {
+				System.out.println("Value found " + val.toString() + " key value " + x.key.toString());
+				return;
+			}
+		}
+		
+		System.out.println("Value could not be found");
+	}
+	
+	public void delete(Value val) {
+		Node previousNode = first;
+		
+		for (Node x = first; x != null; x = x.next) {
+			if (x.val.equals(val)) {
+				previousNode.next = x.next;
+				return;
+			}
+			
+			previousNode = x;
+		}
+	}
+	
 	public void printValues() {
 		for (Node x = first; x != null; x = x.next)
 			System.out.println(x.key + " " + x.val);
