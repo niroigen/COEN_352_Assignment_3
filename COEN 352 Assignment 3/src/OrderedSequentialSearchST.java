@@ -14,7 +14,7 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> {
 		}
 	}
 	
-	public void put(Key key, Value val)
+	public void insert(Key key, Value val)
 	{ // Search for key. Update value if found; grow table if new.
 		if (first == null) {
 			first = new Node(key, val, first);
@@ -62,7 +62,7 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> {
 		}
 	}
 	
-	public void printValues() {
+	public void print() {
 		for (Node x = first; x != null; x = x.next)
 			System.out.println(x.key + " " + x.val);
 	}
