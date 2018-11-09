@@ -1,5 +1,6 @@
 a. E Q
-b. E Q J
+b. E Q
 c. E Q 
 d. E Q J
-e. 
+e. E D Q J M T S
+f. E D Q J M T S
