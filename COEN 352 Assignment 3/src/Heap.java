@@ -25,7 +25,7 @@ public class Heap {
 		ArrayList<String> datas = new ArrayList<String>();
 		
 		for (int i = 0; i < a.length; i++) {
-			String[] data = a[i].split("\t");
+			String[] data = a[i].split(" ");
 			datas.add(data[0]);
 		}
 		
@@ -36,7 +36,7 @@ public class Heap {
 		ArrayList<Integer> datas = new ArrayList<Integer>();
 		
 		for (int i = 0; i < a.length; i++) {
-			String[] data = a[i].split("\t");
+			String[] data = a[i].split(" ");
 			datas.add(Integer.parseInt(data[1]));
 		}
 		
