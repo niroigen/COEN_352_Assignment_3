@@ -1,0 +1,48 @@
+According to the textbook, for the worst case in red-black BSTs is 
+"The worst case is a 2-3 tree that is all 2-nodes except that the leftmost
+path is made up of 3-nodes. The path taking left links from the root is twice as long
+as the paths of length ~ lg N that involve just 2-nodes. It is possible, but not easy, to
+develop key sequences that cause the construction of red-black BSTs whose average
+path length is the worst-case 2 lg N."
+
+Insert values A,B,C,D,E,F in reverse order
+
+Insert  F       (Black)F
+
+        E       (Black)F
+             (Red)E
+
+        D       (Black)F
+             (Red)E
+           (Red)D
+
+        D       (Black)E
+             (Red)D  (Red)F
+           
+               (Red)E
+             (Black)D  (Black)F
+
+        D       (Black)E
+             (Black)D  (Black)F
+
+        C       (Black)E
+             (Black)D  (Black)F
+           (Red)C
+
+        B        (Black)E
+              (Black)D  (Black)F
+            (Red)C
+          (Red)B
+
+        B           (Black)E
+               (Black)C      (Black)F
+            (Red)B  (Red)D
+
+        B           (Black)E
+               (Red)C      (Black)F
+            (Black)B  (Black)D
+
+        A           (Black)E
+               (Red)C      (Black)F
+            (Black)B  (Black)D
+          (Red)A
