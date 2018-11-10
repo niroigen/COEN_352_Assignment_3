@@ -12,3 +12,5 @@ T	8	A E Q S T U Y		   1 | 6 | 4 | 7 | 8 | 5 | 3 |   |   |   |
 I	9	A E I Q S T U Y		   1 | 6 | 9 | 4 | 7 | 8 | 5 | 3 |   |   |
 O	10	A E I O Q S T U Y	   1 | 6 | 9 | 10| 4 | 7 | 8 | 5 | 3 |   |
 N	11	A E I N O Q S T U Y	   1 | 6 | 9 | 11| 10| 4 | 7 | 8 | 5 | 3 |
+
+Total Compares is 38.
