@@ -29,13 +29,19 @@ public class Q_3_1_1 {
 		
 		double average = 0.0;
 		int size = grades.length;
+		
+		System.out.println();
+		System.out.println("Grades with GPA");
+		
 		for (int i = 0; i < size; i++) {
+			System.out.println(grades[i] + "\t: " + gradesMap.get(grades[i]));
 			average += gradesMap.get(grades[i]);
 		}
 		
 		average /= size;
 		average = Math.round(average * 100.0) / 100.0;
 		
+		System.out.println();
 		System.out.println("Average grade is " + average);
 	}
 	
